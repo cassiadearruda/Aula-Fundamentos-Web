@@ -1,0 +1,58 @@
+/*ESTILOS DA PAGINA INDEX.HTML*/
+.center {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover {
+    color: gray;
+}
+
+.p-30 {
+    padding: 50px;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh {
+    width: 300px;
+    height: 300px;
+}
+
+.tm {
+    width: 25px;
+    height: 25px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+/*ESTILOS DA PAGINA CONTATO.HTML*/
+
+.mr-50 {
+    margin-right : 50px;
+}
