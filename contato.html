@@ -32,20 +32,24 @@
         height="300" 
         style="border:0;" 
         allowfullscreen="" 
-        loading="lazy"></iframe>
+        loading="lazy"
+        id = "mapa"
+        onmousemove="mapaZoom()"
+        onmouseout="mapaNormal()"></iframe>
         </div>
     </div>
     <form>
         <label for="nome">Nome:</label><br>
-        <input type="text" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup="validaNome()">  
+        <div id = "txtNome"></div>
         <br>
         <label for="email">Email:</label><br>
-        <input type="text" id="email">
-        <br>
+        <input type="text" id="email" onkeyup="validaEmail()">
+        <div id = "txtEmail"></div>
         <br>
         <label for="assunto">Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="35" rows="5"></textarea>
+        <textarea name="assunto" id="assunto" cols="35" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id = "txtAssunto"></div>
         <br>
         <br>
         <button>Enviar</button>
@@ -72,5 +76,7 @@
             Todos os direitos reservados: Cássia de Arruda &copy;
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
